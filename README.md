@@ -18,6 +18,9 @@ Got this while searching internet,courtesy Claudio P.
 
     #!/bin/sh 
     openssl enc -d -aes-256-cbc -a -in script-enc | sh - 
+    passing password in command
+     openssl enc -d -aes-256-cbc -a -in test-enc -pass pass:12345 | sh -
+
 
     Run "script-final.sh", enter the password, and the script will run without write the plain text script on disk.
 
